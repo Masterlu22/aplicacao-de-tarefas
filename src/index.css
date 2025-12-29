@@ -1,0 +1,181 @@
+:root {
+  --cor-botao-add: #b1b1b1;
+  --cor-botao-delete: #ff0000;
+  --cor-de-fundo-lista-tarefas: #f0f8ff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #b6946e;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+nav {
+background-color: rgb(78, 77, 75);
+width: 300px;
+align-items: center;
+border-radius: 10px;
+height: 25px;
+padding: 5px;
+display: flex;
+justify-content: center;
+margin: 0 auto 20px auto;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  margin: 5px;
+}
+
+body {
+  margin: 0;
+  display: block;
+  min-height: 100vh;
+  text-align: center;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+#pagina-inicial #botao-pagina-inicial{
+ width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border: solid 2px rgb(119, 114, 108);
+}
+
+#pagina-inicial #botao-pagina-inicial:hover{
+    font-weight: bold;
+    box-shadow: black 10px;
+}
+
+.home-container{
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-container #botao-voltar-pagina-inicial{
+  width: 100px;
+  height: 35px;
+  border-radius: 15px;
+  border: solid 2px rgb(119, 114, 108) ;
+}
+
+.home-container #botao-voltar-pagina-inicial:hover{
+  font-weight: bold;
+  box-shadow: black 5px;
+} 
+
+.add-task-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-task-container #formulario-adicao{
+  background-color: #edffd0;
+  border-radius: 15px;
+  width: 300px;
+  border: solid 2px slategrey;
+  position: relative;
+  margin: 20px auto;
+  display: block;
+  padding: 10px;
+}
+
+.add-task-container #formulario-adicao #button-add {
+  border-radius: 8px;
+  border: 1px solid rgb(0, 0, 0);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color:var(--cor-botao-add);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  color: black;
+  margin: 20px;
+}
+
+.add-task-container #formulario-adicao #button-add:hover{
+  font-weight: bold;
+}
+
+.add-task-container #formulario-adicao #nome-task{
+  height: 25px;
+  width: 200px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  border: solid 2px black;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.active{
+  font-weight: bolder;
+  border-bottom: solid 2px white;
+}
+
+#tarefas{
+  background-color: var(--cor-de-fundo-lista-tarefas);
+  color: black;
+  font-weight: bolder;
+  padding: 8px;
+  border-radius: 20px;
+  border: solid 3px rgb(235, 209, 209);
+  text-align: center;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 500px;
+  min-width: 350px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#tarefas .botoes-editar-e-excluir .button-delete{
+background-color: var(--cor-botao-delete);
+color: #ffffff;
+margin: 5px;
+margin-left: 10px;
+}
+
+#tarefas .lista-tarefas{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 8px;      
+  margin-bottom: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  list-style: none;
+}
+
+
+
+
